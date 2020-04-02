@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+* {
+  box-sizing: border-box;
+  font: bold 18px "Oswald";
+}
+body {
+  /* background: linear-gradient(to right, #330000, #660000);*/
+  /*background: url("https://drive.google.com/uc?export=view&id=19bTGQmIQFzO5_ZBEgKSJD1vsypFq9J_M")
+    top left fixed no-repeat;
+  background-size: cover;*/
+}
+.App {
+  width: 100%;
+  max-width: 1300px;
+  margin: 5px auto;
+  min-height: 600px;
+}
+header {
+  height: 300px;
+  width: 100%;
+  padding: 15px;
+  /*background: url("https://drive.google.com/uc?export=view&id=1gHsKP1rcGJcYfEFbSxRYzdC_msHA-VFr") -100px
+    top left no-repeat
+  background-size: cover;*/
+  background: linear-gradient(#87ceff, white);
+}
+
+.toplogo {
+  height: 45px;
+  float: left;
+  clear: left;
+}
+nav.top-nav {
+  transition: all 500ms;
+  float: right;
+  clear: right;
+  width: 50%;
+  text-align: right;
+}
+
+nav .top-nav .nav-closed {
+  width: 45px;
+  padding-left: 80px;
+}
+nav.top-nav a {
+  text-decoration: none;
+  color: #4682b4;
+  padding: 3px 8px;
+
+  transition: all 600ms;
+}
+
+nav.top-nav a.active {
+  color: #404040;
+}
+
+nav.top-nav a:hover {
+  color: #404040;
+}
+
+.hamburger {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0.6;
+  transition: all 500ms;
+}
+
+.hamburger .thick-line,
+.hamburger .thin-line {
+  width: 40px;
+  background-color: #4682b4;
+  border-radius: 3px;
+}
+.hamburger .thick-line {
+  height: 7px;
+}
+.hamburger .thin-line {
+  height: 3px;
+}
+
+.hamburger:hover {
+  opacity: 1;
+}
+#content {
+  width: 100%;
+  float: left;
+  clear: both;
+  min-height: 600px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    padding: 10px;
+  }
+  .hamburger {
+    display: flex;
+  }
+  nav.top-nav {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #363636;
+    width: 0;
+    overflow: hidden;
+    text-align: left;
+  }
+
+  nav.top-nav a {
+    font-size: 25px;
+    width: 280px;
+    display: block;
+    overflow: hidden;
+  }
+
+  nav.top-nav a.active {
+    color: #a62a2a;
+  }
+  nav.top-nav a:first-child {
+    margin-top: 55px;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  nav.top-nav {
+    width: 50% !important;
+  }
+}
