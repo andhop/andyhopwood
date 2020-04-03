@@ -7,7 +7,7 @@ import WebDev from "./components/pages/WebDev";
 import AutoConsult from "./components/pages/AutoConsult";
 import Contact from "./components/pages/Contact";
 //import Ham from "./components/Hamburger";
-import logo from "../public/images/logo.png";
+import logo from "./images/logo.png";
 
 class App extends React.Component {
   constructor(props) {
