@@ -92,8 +92,8 @@ nav.top-nav a:hover {
 }
 #content {
   width: 100%;
-  float: left;
-  clear: both;
+  
+  
   min-height: 600px;
   padding: 5px;
 }

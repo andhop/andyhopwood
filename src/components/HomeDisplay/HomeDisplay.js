@@ -1,11 +1,12 @@
 import React from "react";
 import "./HomeDisplay.css";
+import me from '../../images/me2.png';
 
 class HomeDisplay extends React.Component {
   render() {
     return (
       <div id="HomeDisplay">
-        <span class="homeSnippet big">Web Developement</span>
+        <img alt="me at keyboard" className="big-home" src={me} />
       </div>
     );
   }
