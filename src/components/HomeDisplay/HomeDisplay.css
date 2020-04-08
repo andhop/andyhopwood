@@ -2,17 +2,21 @@
 #HomeDisplay {
   width: 100%;
   margin-top: -200px;
-  display: flex;
-  align-content: center;
+  
+  
 
 }
 
 .big-home{
   width: 40%;
-  margin: 0 auto;
+  margin: 5px 0 5px 100px;
   
 }
-
+.big-text{
+  display: block;
+  color: #B8B8B8;
+  font-size: 30px;
+}
 @media screen and (max-width: 650px) {
  .big-home{
    width: 90%;
