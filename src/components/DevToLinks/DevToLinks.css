@@ -1,0 +1,27 @@
+.content-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+.card{
+    border-radius: 6px;
+    background-color: green;
+    padding: 8px;
+    transition: all 1s;
+    width: 33%;
+    min-height: 300px;
+    
+}
+
+#devToArticles {
+    margin-top: 200px;
+}
+
+.card:nth-of-type(1){
+    background: linear-gradient(#AF4035, #E3170D);
+}
+.card:nth-of-type(2){
+    background: linear-gradient(#FCDC3B, #FFEC8B);
+}

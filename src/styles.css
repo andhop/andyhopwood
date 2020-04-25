@@ -4,23 +4,27 @@
   font: bold 18px "Oswald";
 }
 body {
+  margin: 0;
+  padding: 0;
   
-  /* background: linear-gradient(to right, #330000, #660000);*/
-  /*background: url("https://drive.google.com/uc?export=view&id=19bTGQmIQFzO5_ZBEgKSJD1vsypFq9J_M")
-    top left fixed no-repeat;
-  background-size: cover;*/
 }
+
 .App {
   
   width: 100%;
-  max-width: 1300px;
-  margin: 5px auto;
+  max-width: 1500px;
+  margin: 0 auto;
   min-height: 600px;
+  
+}
+
+.App > * {
+  padding: 8px;
 }
 header {
-  height: 300px;
+  height: 500px;
   width: 100%;
-  padding: 15px;
+  
   /*background: url("https://drive.google.com/uc?export=view&id=1gHsKP1rcGJcYfEFbSxRYzdC_msHA-VFr") -100px
     top left no-repeat
   background-size: cover;*/
