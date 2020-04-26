@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
-import { HashRouter, NavLink, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, NavLink, Route } from "react-router-dom";
+import {BrowserHistory} from "react-router";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import WebDev from "./components/pages/WebDev";
@@ -106,14 +107,14 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <HashRouter>
+        <BrowserRouter>
           <header>
             <img className="toplogo" alt="logo" src={logo} />
             {this.NavLinks()}
             {this.Ham()}
           </header>
           <main id="content">{this.Routes()}</main>
-        </HashRouter>
+        </BrowserRouter>
       </div>
     );
   }
