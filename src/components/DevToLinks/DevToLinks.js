@@ -19,7 +19,7 @@ constructor(props){
     }
 
     componentDidMount(){
-        this.setState({opacity : 1});
+        setTimeout(() => {this.setState({opacity : .7})}, 2000);
     }
 
     render(){
@@ -31,9 +31,11 @@ constructor(props){
                            
         this.state.dev_data.map(article => {
             cards.push(
-                <div className="card" style={{ opacity: `${this.state.opacity}`}}>
+                <a href={article.url} target="_blank" className="card" style={{ opacity: `${this.state.opacity}`}}>
                     <span className="dev_art_title">{article.title}</span>
-                </div>
+                    <div className="dev-art-img" style={{background: `url(${article.cover_image}) no-repeat`}} />
+                    <div className="dev-art-descr">{article.description}</div>
+                </a>
             );
         });
             

@@ -7,16 +7,18 @@
 }
 .card{
     border-radius: 6px;
-    background-color: green;
-    padding: 8px;
+    text-decoration: none;
+    display: block;
     transition: all 1s;
     width: 33%;
     min-height: 300px;
     
 }
-
+.card:hover{
+    opacity: 1 !important;
+}
 #devToArticles {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .card:nth-of-type(1){
@@ -25,3 +27,38 @@
 .card:nth-of-type(2){
     background: linear-gradient(#FCDC3B, #FFEC8B);
 }
+.card:nth-of-type(3){
+    background: linear-gradient(#00688B, #009ACD);
+}
+
+.dev_art_title {
+    color: white;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    background: linear-gradient(#2E2E2E, #4D4D4D);
+    border-radius: 6px 6px 0 0;
+    font-size: 20px;
+   
+}
+
+.dev-art-img{
+    height: 200px;
+    background-size: contain !important;
+}
+.dev-art-descr{
+    margin:6px;
+    color: #424242;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media screen and (max-width: 651px) {
+    .content-row{
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        margin-top: 8px;
+    }
+  }
