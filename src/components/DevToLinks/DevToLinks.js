@@ -31,7 +31,7 @@ constructor(props){
                            
         this.state.dev_data.map(article => {
             cards.push(
-                <a href={article.url} target="_blank" className="card" style={{ opacity: `${this.state.opacity}`}}>
+                <a href={article.url} target="_blank" rel="noopener noreferrer" className="card" style={{ opacity: `${this.state.opacity}`}}>
                     <span className="dev_art_title">{article.title}</span>
                     <div className="dev-art-img" style={{background: `url(${article.cover_image}) no-repeat`}} />
                     <div className="dev-art-descr">{article.description}</div>
@@ -42,8 +42,13 @@ constructor(props){
        
 
         return (
-            <div id="devToArticles" className="content-row">
-                {cards}
+            <div className="content-box"  id="devToArticles">
+                <h3>Dev.to Blogs</h3>
+                <p>I blog on occasion. Go take a look!</p>
+                <div className="content-row">
+                    
+                    {cards}
+                </div>
             </div>
             
         )

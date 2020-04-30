@@ -6,7 +6,9 @@ class Home extends React.Component {
     return (
     <div>
     <HomeDisplay />
+    
     <DevToLinks />
+    <div className="seperator" />
     </div>
     )
     

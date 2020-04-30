@@ -22,12 +22,8 @@ body {
   padding: 8px;
 }
 header {
-  height: 500px;
-  width: 100%;
-  
-  /*background: url("https://drive.google.com/uc?export=view&id=1gHsKP1rcGJcYfEFbSxRYzdC_msHA-VFr") -100px
-    top left no-repeat
-  background-size: cover;*/
+  height: 50px;
+  width: 100%; 
   background: linear-gradient(#87ceff, white);
 }
 
@@ -103,6 +99,24 @@ nav.top-nav a:hover {
   min-height: 600px;
   padding: 5px;
 }
+.content-row{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+ 
+
+}
+
+.seperator {
+  height: 5px;
+  width: 80%;
+  background: linear-gradient(to right, white, #8A8A8A, white);
+  margin: 30px auto;
+
+}
+
+
 
 @media screen and (max-width: 650px) {
   header {
@@ -136,10 +150,18 @@ nav.top-nav a:hover {
   nav.top-nav a:first-child {
     margin-top: 55px;
   }
+
+  .content-row{
+    flex-direction: column; 
+  }
 }
 
 @media screen and (min-width: 651px) {
   nav.top-nav {
     width: 50% !important;
   }
+
+ 
 }
+
+

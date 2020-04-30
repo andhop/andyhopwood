@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles.css";
-import { BrowserRouter, HashRouter, NavLink, Route } from "react-router-dom";
-import {BrowserHistory} from "react-router";
+import { BrowserRouter, NavLink, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import WebDev from "./components/pages/WebDev";
