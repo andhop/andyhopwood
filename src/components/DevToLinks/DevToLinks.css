@@ -36,7 +36,9 @@
 
 .dev-art-img{
     height: 200px;
-    background-size: contain !important;
+    width: 100%;
+    background-size: 100% !important;
+    background-position: center 
 }
 .dev-art-descr{
     margin:6px;
