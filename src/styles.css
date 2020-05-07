@@ -117,6 +117,15 @@ nav.top-nav a:hover {
 }
 
 
+.left-sidebar {
+  width: 30%;
+  padding: inherit;
+}
+
+.right-sidebar{
+  width: 70%;
+  padding: inherit;
+}
 
 @media screen and (max-width: 650px) {
   header {

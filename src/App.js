@@ -1,13 +1,9 @@
 import React from "react";
 import "./styles.css";
-import { BrowserRouter, NavLink, Route } from "react-router-dom";
-import Home from "./components/pages/Home";
-import About from "./components/pages/About";
-import WebDev from "./components/pages/WebDev";
-import AutoConsult from "./components/pages/AutoConsult";
-import Contact from "./components/pages/Contact";
-//import Ham from "./components/Hamburger";
+import { BrowserRouter, NavLink} from "react-router-dom";
+
 import logo from "./images/logo.png";
+import AllSiteRoutes from "./components/Routing/AllRoutes";
 
 class App extends React.Component {
   constructor(props) {
@@ -37,56 +33,46 @@ class App extends React.Component {
     return (
       <nav className="top-nav">
         <NavLink
-          onClick={this.showMenu.bind(this)}
-          exact
-          to="/"
-          className="nav-item"
+        onClick={this.showMenu.bind(this)}
+        exact
+        to="/"
+        className="nav-item"
         >
-          Home
+        Home
         </NavLink>
         <NavLink
-          onClick={this.showMenu.bind(this)}
-          to="/About"
-          className="nav-item"
+        onClick={this.showMenu.bind(this)}
+        to="/About"
+        className="nav-item"
         >
-          About
+        About
         </NavLink>
         <NavLink
-          onClick={this.showMenu.bind(this)}
-          to="/web-development"
-          className="nav-item"
+        onClick={this.showMenu.bind(this)}
+        to="/web-development"
+        className="nav-item"
         >
-          Web Development
+        Web Development
         </NavLink>
         <NavLink
-          onClick={this.showMenu.bind(this)}
-          to="/automation-consulting"
-          className="nav-item"
+        onClick={this.showMenu.bind(this)}
+        to="/automation-consulting"
+        className="nav-item"
         >
-          Automation Consulting
+        Automation Consulting
         </NavLink>
         <NavLink
-          onClick={this.showMenu.bind(this)}
-          to="/contact"
-          className="nav-item"
+        onClick={this.showMenu.bind(this)}
+        to="/contact"
+        className="nav-item"
         >
-          Give me a shout
+        Give me a shout
         </NavLink>
       </nav>
     );
   }
 
-  Routes() {
-    return (
-      <Route>
-        <Route exact path="/" component={Home} />
-        <Route path="/About" component={About} />
-        <Route path="/web-development" component={WebDev} />
-        <Route path="/automation-consulting" component={AutoConsult} />
-        <Route path="/Contact" component={Contact} />
-      </Route>
-    );
-  }
+ 
 
   Ham() {
     return (
@@ -112,7 +98,9 @@ class App extends React.Component {
             {this.NavLinks()}
             {this.Ham()}
           </header>
-          <main id="content">{this.Routes()}</main>
+          <main id="content">
+            <AllSiteRoutes />
+          </main>
         </BrowserRouter>
       </div>
     );
